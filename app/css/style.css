@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Akronim&display=swap");
+body #wrapper #headerContainer {
+  background: radial-gradient(100% 100% at 52.01% 53.93%, rgba(255, 255, 255, 9e-06) 0%, rgba(0, 0, 0, 0.045) 100%), #F4F4F4;
+  border: 1px solid #979797;
+  height: 1003px; }
+  body #wrapper #headerContainer #header {
+    margin: 72px 290px 0; }
+    body #wrapper #headerContainer #header #menu {
+      display: flex;
+      justify-content: space-between; }
+    body #wrapper #headerContainer #header #banner {
+      display: block;
+      padding-top: 305px; }
+      body #wrapper #headerContainer #header #banner #logo {
+        width: 100%; }
+      body #wrapper #headerContainer #header #banner #slogan p {
+        font-family: Akronim;
+        font-size: 48px;
+        color: #7A797A;
+        margin: 16px 0; }
+      body #wrapper #headerContainer #header #banner #plant {
+        justify-self: end;
+        bottom: -18%;
+        right: 28%;
+        position: absolute;
+        width: 31%; }
+
+body #wrapper #contentContainer #content {
+  background-color: #4A4A4A;
+  height: 700px;
+  /*
+display: grid;
+        align-items: center;
+          margin: 141px 290px 0;
+      */ }
