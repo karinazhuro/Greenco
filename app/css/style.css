@@ -1,35 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Akronim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200&display=swap");
 body #wrapper #headerContainer {
   background: radial-gradient(100% 100% at 52.01% 53.93%, rgba(255, 255, 255, 9e-06) 0%, rgba(0, 0, 0, 0.045) 100%), #F4F4F4;
-  border: 1px solid #979797;
-  height: 1003px; }
+  border: 1px solid #979797; }
   body #wrapper #headerContainer #header {
     margin: 72px 290px 0; }
     body #wrapper #headerContainer #header #menu {
       display: flex;
       justify-content: space-between; }
     body #wrapper #headerContainer #header #banner {
-      display: block;
-      padding-top: 305px; }
+      padding-top: 305px;
+      position: relative; }
       body #wrapper #headerContainer #header #banner #logo {
         width: 100%; }
       body #wrapper #headerContainer #header #banner #slogan p {
         font-family: Akronim;
         font-size: 48px;
         color: #7A797A;
-        margin: 16px 0; }
+        margin: 16px 0 0 0; }
       body #wrapper #headerContainer #header #banner #plant {
-        justify-self: end;
-        bottom: -18%;
-        right: 28%;
-        position: absolute;
-        width: 31%; }
+        position: relative;
+        margin: -453px 0 -6px 345px; }
 
-body #wrapper #contentContainer #content {
+body #wrapper #contentContainer {
   background-color: #4A4A4A;
-  height: 700px;
-  /*
-display: grid;
-        align-items: center;
-          margin: 141px 290px 0;
-      */ }
+  height: 793px; }
+  body #wrapper #contentContainer #content {
+    padding: 141px 290px 0;
+    display: flex; }
+    body #wrapper #contentContainer #content #text {
+      width: 600px; }
+      body #wrapper #contentContainer #content #text h1 {
+        font-family: Work Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 81px;
+        line-height: 100px;
+        letter-spacing: 18.9844px;
+        color: #FFFFFF;
+        margin: 53px 0 31px 0;
+        width: 433px; }
+      body #wrapper #contentContainer #content #text #desc {
+        font-family: Mukta Vaani;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 35px;
+        text-align: justify;
+        color: #FFFFFF;
+        width: 433px; }

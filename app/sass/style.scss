@@ -1,14 +1,15 @@
 // import font
 @import "../fonts/Akronim";
-
+@import "../fonts/WorkSans";
+@import "../fonts/MuktaVaani";
 @import "rules";
 
 body {
   #wrapper {
     #headerContainer {
-      background: radial-gradient(100% 100% at 52.01% 53.93%, rgba(255, 255, 255, 9e-06) 0%, rgba(0, 0, 0, 0.045) 100%), #F4F4F4;
+      background: radial-gradient(100% 100% at 52.01% 53.93%,
+              rgba(255, 255, 255, 9e-06) 0%, rgba(0, 0, 0, 0.045) 100%), #F4F4F4;
       border: 1px solid #979797;
-      height: 1003px;
 
       #header {
         margin: 72px 290px 0;
@@ -19,8 +20,8 @@ body {
         }
 
         #banner {
-          display: block;
           padding-top: 305px;
+          position: relative;
 
           #logo {
             width: 100%;
@@ -31,41 +32,48 @@ body {
               font-family: Akronim;
               font-size: 48px;
               color: $colorSlogan;
-              margin: 16px 0;
+              margin: 16px 0 0 0;
             }
           }
 
           #plant {
-            justify-self: end;
-            bottom: -18%;
-            right: 28%;
-            position: absolute;
-            width: 31%;
+            position: relative;
+            margin: -453px 0 -6px 345px;
           }
-
         }
       }
     }
+
     #contentContainer {
-      //background-color: $colorContentSection;
-      //height: 700px;
+      background-color: $colorContentSection;
+      height: 793px;
       #content {
-        background-color: $colorContentSection;
-        height: 700px;
-              /*
-display: grid;
-        align-items: center;
-          margin: 141px 290px 0;
-      */
-        //#media {
-        //  width: 0%;
-        //  margin: 0 0 0 42px;
-        //  img {
-        //    margin: 19px 0 0 0;
-        //    width: 16px;
-        //    height: 16px;
-        //  }
-        //}
+        padding: 141px 290px 0;
+        display: flex;
+        #text {
+          width: 600px;
+          h1 {
+            font-family: Work Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 81px;
+            line-height: 100px;
+            letter-spacing: 18.9844px;
+            color: $colorContentText;
+            margin: 53px 0 31px 0;
+            width: 433px;
+          }
+          #desc {
+            font-family: Mukta Vaani;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 35px;
+            text-align: justify;
+            color: $colorContentText;
+            width: 433px;
+          }
+        }
       }
     }
   }
