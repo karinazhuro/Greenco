@@ -1,52 +1,105 @@
 @import url("https://fonts.googleapis.com/css2?family=Akronim&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200&display=swap");
-body #wrapper #headerContainer {
+html::-webkit-scrollbar {
+  display: none; }
+
+body #wrapper #header {
   background: radial-gradient(100% 100% at 52.01% 53.93%, rgba(255, 255, 255, 9e-06) 0%, rgba(0, 0, 0, 0.045) 100%), #F4F4F4;
-  border: 1px solid #979797; }
-  body #wrapper #headerContainer #header {
-    margin: 72px 290px 0; }
-    body #wrapper #headerContainer #header #menu {
-      display: flex;
-      justify-content: space-between; }
-    body #wrapper #headerContainer #header #banner {
-      padding-top: 305px;
-      position: relative; }
-      body #wrapper #headerContainer #header #banner #logo {
-        width: 100%; }
-      body #wrapper #headerContainer #header #banner #slogan p {
-        font-family: Akronim;
-        font-size: 48px;
-        color: #7A797A;
-        margin: 16px 0 0 0; }
-      body #wrapper #headerContainer #header #banner #plant {
-        position: relative;
-        margin: -453px 0 -6px 345px; }
+  border: 1px solid #979797;
+  padding: 72px 290px 0; }
+  body #wrapper #header #header__menu {
+    display: flex;
+    justify-content: space-between; }
+  body #wrapper #header #header__banner {
+    padding-top: 305px;
+    position: relative; }
+    body #wrapper #header #header__banner #logo {
+      width: 100%; }
+    body #wrapper #header #header__banner #slogan p {
+      font-family: Akronim;
+      font-size: 48px;
+      color: #7A797A;
+      margin: 16px 0 0 0; }
+    body #wrapper #header #header__banner #plant {
+      position: relative;
+      margin: -453px 0 -6px 345px; }
 
 body #wrapper #contentContainer {
   background-color: #4A4A4A;
   height: 793px; }
   body #wrapper #contentContainer #content {
     padding: 141px 290px 0;
-    display: flex; }
-    body #wrapper #contentContainer #content #text {
+    display: flex;
+    justify-content: space-between; }
+    body #wrapper #contentContainer #content #carouselContainer {
+      position: relative;
+      height: 500px;
       width: 600px; }
-      body #wrapper #contentContainer #content #text h1 {
-        font-family: Work Sans;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 81px;
-        line-height: 100px;
-        letter-spacing: 18.9844px;
-        color: #FFFFFF;
-        margin: 53px 0 31px 0;
-        width: 433px; }
-      body #wrapper #contentContainer #content #text #desc {
-        font-family: Mukta Vaani;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 35px;
-        text-align: justify;
-        color: #FFFFFF;
-        width: 433px; }
+      body #wrapper #contentContainer #content #carouselContainer .carousel__button--left {
+        position: absolute;
+        top: 50%;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        padding: 0;
+        transform: rotate(180deg);
+        left: -40px; }
+      body #wrapper #contentContainer #content #carouselContainer .carousel__button--right {
+        position: absolute;
+        top: 50%;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        padding: 0;
+        right: 0; }
+      body #wrapper #contentContainer #content #carouselContainer .is-hidden {
+        display: none; }
+    body #wrapper #contentContainer #content #carousel__track-container {
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      left: 30px; }
+      body #wrapper #contentContainer #content #carousel__track-container #carousel__track {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
+        height: 100%;
+        transition: transform 250ms ease-in; }
+        body #wrapper #contentContainer #content #carousel__track-container #carousel__track .carousel__slide {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 100%; }
+          body #wrapper #contentContainer #content #carousel__track-container #carousel__track .carousel__slide h1 {
+            font-family: Work Sans;
+            font-weight: normal;
+            font-size: 81px;
+            line-height: 100px;
+            letter-spacing: 18px;
+            color: #FFFFFF;
+            margin: 53px 0 31px 0; }
+          body #wrapper #contentContainer #content #carousel__track-container #carousel__track .carousel__slide p {
+            font-family: Mukta Vaani;
+            font-size: 24px;
+            line-height: 35px;
+            text-align: justify;
+            color: #FFFFFF;
+            margin: 0 93px 0 0; }
+  body #wrapper #contentContainer #carousel__nav {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 0 0 30px; }
+    body #wrapper #contentContainer #carousel__nav .carousel__indicator {
+      cursor: pointer;
+      background: #FFFFFF;
+      opacity: 0.6;
+      border: 0px solid #FFFFFF;
+      width: 168px;
+      height: 3px; }
+    body #wrapper #contentContainer #carousel__nav .current-slide {
+      border: 3px solid #FFFFFF;
+      opacity: 1;
+      top: -3px;
+      position: relative; }
