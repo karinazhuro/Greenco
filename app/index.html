@@ -1,71 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Greenco</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Greenco</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div id="wrapper">
-	<div id="header">
-		<div id="header__menu">
-			<a href="#"><img src="img/wrapper/headerContainer/header/menu/menuIcon.svg" alt="menu"></a>
-			<a href="#"><img src="img/wrapper/headerContainer/header/menu/home.svg" alt="home"></a>
-		</div>
-		<div id="header__banner">
-			<img id="logo" src="img/wrapper/headerContainer/header/banner/GReeenco..svg" alt="GReeenco">
-			<div id="slogan"><p>Nature’s souvenir store</p></div>
-			<img id="plant" src="img/wrapper/headerContainer/header/banner/Plant.svg" alt="Plant">
-		</div>
-	</div>
-	<div id="contentContainer">
-		<div id="content">
-			<img src="img/wrapper/contentContainer/content/annie-spratt-78044.svg">
-			<div id="carouselContainer">
-				<button class="carousel__button--left is-hidden">
-					<img src="img/wrapper/contentContainer/content/text/Path2.svg" alt="arr">
-				</button>
-				<div id="carousel__track-container">
-					<ul id="carousel__track">
-						<li class="carousel__slide current-slide">
-							<h1>Potted <br> cacti</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-								dolore
-								magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-								commodo
-								consequat. .</p>
-						</li>
-						<li class="carousel__slide">
-							<h1>Potted <br> cacti</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-								dolore
-								magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-								commodo
-								consequat. .</p>
-						</li>
-						<li class="carousel__slide">
-							<h1>Potted <br> cacti</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-								dolore
-								magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-								commodo
-								consequat. .</p>
-						</li>
-					</ul>
-				</div>
-				<button class="carousel__button--right">
-					<img src="img/wrapper/contentContainer/content/text/Path2.svg" alt="arr">
-				</button>
-				<div id="carousel__nav">
-					<button class="carousel__indicator current-slide"></button>
-					<button class="carousel__indicator"></button>
-					<button class="carousel__indicator"></button>
-				</div>
-			</div>
-
-		</div>
-	</div>
+  <div id="header">
+    <div id="header__menu">
+      <a href="#"><img src="img/wrapper/header/menu/menuIcon.svg" alt="menu"></a>
+      <a href="#"><img src="img/wrapper/header/menu/home.svg" alt="home"></a>
+    </div>
+    <div id="header__banner">
+      <img id="header__banner_logo" src="img/wrapper/header/banner/GReeenco..svg" alt="GReeenco">
+      <div id="header__banner_slogan"><p>Nature’s souvenir store</p></div>
+      <img id="header__banner_plant" src="img/wrapper/header/banner/Plant.svg" alt="Plant">
+    </div>
+  </div>
+  <div id="content">
+    <img id="content__picture" src="img/wrapper/content/annie-spratt-78044.svg">
+    <div id="content__carousel">
+      <button class="carousel__button--left is-hidden">
+        <img src="img/wrapper/content/text/Path2.svg" alt="arr">
+      </button>
+      <div id="carousel__track-container">
+        <ul id="carousel__track">
+          <li class="carousel__slide current-slide">
+            <h1>Potted <br> cacti</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et
+              dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea
+              commodo
+              consequat. .</p>
+          </li>
+          <li class="carousel__slide">
+            <h1>Potted <br> cacti</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et
+              dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea
+              commodo
+              consequat. .</p>
+          </li>
+          <li class="carousel__slide">
+            <h1>Potted <br> cacti</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et
+              dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea
+              commodo
+              consequat. .</p>
+          </li>
+        </ul>
+      </div>
+      <button class="carousel__button--right">
+        <img src="img/wrapper/content/text/Path2.svg" alt="arr">
+      </button>
+      <div id="carousel__nav">
+        <button class="carousel__indicator current-slide"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+      </div>
+    </div>
+    <div id="media">
+      <img src="img/wrapper/content/media/facebook.svg" alt="facebook">
+      <img src="img/wrapper/content/media/instagram.svg" alt="instagram">
+      <img src="img/wrapper/content/media/tw.svg" alt="tw">
+    </div>
+  </div>
 </div>
 <script src="js/carousel.js"></script>
 </body>
