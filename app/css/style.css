@@ -7,7 +7,7 @@ html::-webkit-scrollbar {
 body #wrapper #header {
   background: radial-gradient(100% 100% at 52.01% 53.93%, rgba(255, 255, 255, 9e-06) 0%, rgba(0, 0, 0, 0.045) 100%), #F4F4F4;
   border: 1px solid #979797;
-  padding: 72px 190px 0; }
+  padding: 72px 220px 0; }
   body #wrapper #header #header__menu {
     display: flex;
     justify-content: space-between; }
@@ -28,79 +28,89 @@ body #wrapper #header {
 body #wrapper #content {
   background-color: #4A4A4A;
   height: 793px;
-  padding: 141px 190px 0;
-  display: flex;
-  justify-content: space-between; }
-  body #wrapper #content #content__picture {
-    width: 42%; }
-  body #wrapper #content #content__carousel {
-    position: relative;
-    height: 500px;
-    width: 600px; }
-    body #wrapper #content #content__carousel .carousel__button--left {
-      position: absolute;
-      top: 50%;
-      background: transparent;
-      border: 0;
-      cursor: pointer;
-      padding: 0;
-      transform: rotate(180deg);
-      left: -40px; }
-    body #wrapper #content #content__carousel .carousel__button--right {
-      position: absolute;
-      top: 50%;
-      background: transparent;
-      border: 0;
-      cursor: pointer;
-      padding: 0;
-      right: 0; }
-    body #wrapper #content #content__carousel .is-hidden {
-      display: none; }
-  body #wrapper #content #carousel__track-container {
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    left: 30px; }
-    body #wrapper #content #carousel__track-container #carousel__track {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      position: relative;
-      height: 100%;
-      transition: transform 250ms ease-in; }
-      body #wrapper #content #carousel__track-container #carousel__track .carousel__slide {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 100%; }
-        body #wrapper #content #carousel__track-container #carousel__track .carousel__slide h1 {
-          font-family: Work Sans;
-          font-weight: normal;
-          font-size: 81px;
-          line-height: 100px;
-          letter-spacing: 18px;
-          color: #FFFFFF;
-          margin: 53px 0 31px 0; }
-        body #wrapper #content #carousel__track-container #carousel__track .carousel__slide p {
-          font-family: Mukta Vaani;
-          font-size: 24px;
-          line-height: 35px;
-          text-align: justify;
-          color: #FFFFFF;
-          margin: 0 93px 0 0; }
-  body #wrapper #content #carousel__nav {
+  padding: 140px 220px 0; }
+  body #wrapper #content #content__container {
     display: flex;
-    justify-content: flex-start;
-    padding: 0 55px 0 30px; }
-    body #wrapper #content #carousel__nav .carousel__indicator {
-      cursor: pointer;
-      background: #FFFFFF;
-      opacity: 0.6;
-      border: 0px solid #FFFFFF;
-      width: 168px;
-      height: 3px; }
-    body #wrapper #content #carousel__nav .current-slide {
-      border: 3px solid #FFFFFF;
-      opacity: 1;
-      top: -3px;
-      position: relative; }
+    justify-content: space-between; }
+    body #wrapper #content #content__container #content__picture {
+      width: 42%; }
+    body #wrapper #content #content__container #content__carousel {
+      position: relative;
+      height: 500px;
+      width: 600px; }
+      body #wrapper #content #content__container #content__carousel .carousel__button--left {
+        position: absolute;
+        top: 50%;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        padding: 0;
+        transform: rotate(180deg);
+        left: -40px; }
+      body #wrapper #content #content__container #content__carousel .carousel__button--right {
+        position: absolute;
+        top: 50%;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        padding: 0;
+        right: 0; }
+      body #wrapper #content #content__container #content__carousel .is-hidden {
+        display: none; }
+      body #wrapper #content #content__container #content__carousel #carousel__track-container {
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        left: 30px; }
+        body #wrapper #content #content__container #content__carousel #carousel__track-container #carousel__track {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          position: relative;
+          height: 100%;
+          transition: transform 250ms cubic-bezier(0.47, 0, 0.75, 0.72); }
+          body #wrapper #content #content__container #content__carousel #carousel__track-container #carousel__track .carousel__slide {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%; }
+            body #wrapper #content #content__container #content__carousel #carousel__track-container #carousel__track .carousel__slide h1 {
+              font-family: Work Sans;
+              font-weight: normal;
+              font-size: 81px;
+              line-height: 100px;
+              letter-spacing: 18px;
+              color: #FFFFFF;
+              margin: 53px 0 31px 0; }
+            body #wrapper #content #content__container #content__carousel #carousel__track-container #carousel__track .carousel__slide p {
+              font-family: Mukta Vaani;
+              font-size: 24px;
+              line-height: 35px;
+              text-align: justify;
+              color: #FFFFFF;
+              margin: 0 93px 0 0; }
+      body #wrapper #content #content__container #content__carousel #carousel__nav {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 55px 0 30px; }
+        body #wrapper #content #content__container #content__carousel #carousel__nav .carousel__indicator {
+          cursor: pointer;
+          background: #FFFFFF;
+          opacity: 0.6;
+          border: 0 solid #FFFFFF;
+          width: 168px;
+          height: 3px; }
+        body #wrapper #content #content__container #content__carousel #carousel__nav .current-slide {
+          border: 3px solid #FFFFFF;
+          opacity: 1;
+          top: -3px;
+          position: relative; }
+    body #wrapper #content #content__container #content__media {
+      position: absolute;
+      left: 0;
+      margin: 42px;
+      display: flex;
+      flex-direction: column;
+      bottom: -800px; }
+      body #wrapper #content #content__container #content__media a {
+        margin: 10px 0; }
