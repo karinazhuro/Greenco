@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Akronim&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 html::-webkit-scrollbar {
   display: none; }
 
@@ -26,85 +27,11 @@ body #wrapper #header {
       margin: -453px 0 -6px 345px; }
 
 body #wrapper #content {
-  background-color: #4A4A4A;
-  height: 793px;
-  padding: 140px 220px 0; }
+  height: 1018px; }
   body #wrapper #content #content__container {
-    display: flex;
-    justify-content: space-between; }
-    body #wrapper #content #content__container #content__picture {
-      width: 42%; }
-    body #wrapper #content #content__container #content__carousel {
-      position: relative;
-      height: 500px;
-      width: 600px; }
-      body #wrapper #content #content__container #content__carousel .carousel__button--left {
-        position: absolute;
-        top: 50%;
-        background: transparent;
-        border: 0;
-        cursor: pointer;
-        padding: 0;
-        transform: rotate(180deg);
-        left: -40px; }
-      body #wrapper #content #content__container #content__carousel .carousel__button--right {
-        position: absolute;
-        top: 50%;
-        background: transparent;
-        border: 0;
-        cursor: pointer;
-        padding: 0;
-        right: 0; }
-      body #wrapper #content #content__container #content__carousel .is-hidden {
-        display: none; }
-      body #wrapper #content #content__container #content__carousel #carousel__track-container {
-        height: 100%;
-        position: relative;
-        overflow: hidden;
-        left: 30px; }
-        body #wrapper #content #content__container #content__carousel #carousel__track-container #carousel__track {
-          padding: 0;
-          margin: 0;
-          list-style: none;
-          position: relative;
-          height: 100%;
-          transition: transform 250ms cubic-bezier(0.47, 0, 0.75, 0.72); }
-          body #wrapper #content #content__container #content__carousel #carousel__track-container #carousel__track .carousel__slide {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 100%; }
-            body #wrapper #content #content__container #content__carousel #carousel__track-container #carousel__track .carousel__slide h1 {
-              font-family: Work Sans;
-              font-weight: normal;
-              font-size: 81px;
-              line-height: 100px;
-              letter-spacing: 18px;
-              color: #FFFFFF;
-              margin: 53px 0 31px 0; }
-            body #wrapper #content #content__container #content__carousel #carousel__track-container #carousel__track .carousel__slide p {
-              font-family: Mukta Vaani;
-              font-size: 24px;
-              line-height: 35px;
-              text-align: justify;
-              color: #FFFFFF;
-              margin: 0 93px 0 0; }
-      body #wrapper #content #content__container #content__carousel #carousel__nav {
-        display: flex;
-        justify-content: flex-start;
-        padding: 0 55px 0 30px; }
-        body #wrapper #content #content__container #content__carousel #carousel__nav .carousel__indicator {
-          cursor: pointer;
-          background: #FFFFFF;
-          opacity: 0.6;
-          border: 0 solid #FFFFFF;
-          width: 168px;
-          height: 3px; }
-        body #wrapper #content #content__container #content__carousel #carousel__nav .current-slide {
-          border: 3px solid #FFFFFF;
-          opacity: 1;
-          top: -3px;
-          position: relative; }
+    background-color: #4A4A4A;
+    height: 793px;
+    padding: 140px 220px 0; }
     body #wrapper #content #content__container #content__media {
       position: absolute;
       left: 0;
@@ -114,3 +41,146 @@ body #wrapper #content {
       bottom: -800px; }
       body #wrapper #content #content__container #content__media a {
         margin: 10px 0; }
+    body #wrapper #content #content__container #content__page {
+      display: flex;
+      justify-content: space-between; }
+      body #wrapper #content #content__container #content__page #page__picture {
+        width: 42%; }
+      body #wrapper #content #content__container #content__page #page__carousel {
+        position: relative;
+        height: 500px;
+        width: 600px; }
+        body #wrapper #content #content__container #content__page #page__carousel .carousel__button--left {
+          position: absolute;
+          top: 50%;
+          background: transparent;
+          border: 0;
+          cursor: pointer;
+          padding: 0;
+          transform: rotate(180deg);
+          left: -40px; }
+        body #wrapper #content #content__container #content__page #page__carousel .carousel__button--right {
+          position: absolute;
+          top: 50%;
+          background: transparent;
+          border: 0;
+          cursor: pointer;
+          padding: 0;
+          right: 0; }
+        body #wrapper #content #content__container #content__page #page__carousel .is-hidden {
+          display: none; }
+        body #wrapper #content #content__container #content__page #page__carousel #carousel__track-container {
+          height: 100%;
+          position: relative;
+          overflow: hidden;
+          left: 30px; }
+          body #wrapper #content #content__container #content__page #page__carousel #carousel__track-container #carousel__track {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            position: relative;
+            height: 100%;
+            transition: transform 250ms cubic-bezier(0.47, 0, 0.75, 0.72); }
+            body #wrapper #content #content__container #content__page #page__carousel #carousel__track-container #carousel__track .carousel__slide {
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              width: 100%; }
+              body #wrapper #content #content__container #content__page #page__carousel #carousel__track-container #carousel__track .carousel__slide h1 {
+                font-family: Work Sans;
+                font-weight: normal;
+                font-size: 81px;
+                line-height: 100px;
+                letter-spacing: 18px;
+                color: #FFFFFF;
+                margin: 53px 0 31px 0; }
+              body #wrapper #content #content__container #content__page #page__carousel #carousel__track-container #carousel__track .carousel__slide p {
+                font-family: Mukta Vaani;
+                font-size: 24px;
+                line-height: 35px;
+                text-align: justify;
+                color: #FFFFFF;
+                margin: 0 93px 0 0; }
+        body #wrapper #content #content__container #content__page #page__carousel #carousel__nav {
+          display: flex;
+          justify-content: flex-start;
+          padding: 0 55px 0 30px; }
+          body #wrapper #content #content__container #content__page #page__carousel #carousel__nav .carousel__indicator {
+            cursor: pointer;
+            background: #FFFFFF;
+            opacity: 0.6;
+            border: 0 solid #FFFFFF;
+            width: 168px;
+            height: 3px; }
+          body #wrapper #content #content__container #content__page #page__carousel #carousel__nav .current-slide {
+            border: 3px solid #FFFFFF;
+            opacity: 1;
+            top: -3px;
+            position: relative; }
+    body #wrapper #content #content__container .content__gallery {
+      display: flex;
+      justify-content: flex-end;
+      bottom: 128px;
+      position: relative; }
+      body #wrapper #content #content__container .content__gallery .gallery {
+        border: 3px solid #979797;
+        padding: 15px 47px;
+        margin: 0 30px 0 0;
+        cursor: pointer;
+        background: none; }
+        body #wrapper #content #content__container .content__gallery .gallery p {
+          font-family: "Roboto";
+          font-size: 36px;
+          line-height: 66px;
+          letter-spacing: 8px;
+          color: #7A797A;
+          margin: 0; }
+      body #wrapper #content #content__container .content__gallery a {
+        margin: 0 0 0 30px;
+        align-self: center; }
+
+body #wrapper #page {
+  display: flex;
+  margin: 230px 450px 0; }
+  body #wrapper #page #title {
+    width: 30px;
+    word-wrap: break-word;
+    font-family: 'Roboto';
+    font-size: 48px;
+    color: #7A797A;
+    margin: 48px 12px 21px 0; }
+  body #wrapper #page #tanalee img {
+    margin: 0 5px 0 12px; }
+  body #wrapper #page #tanalee p {
+    width: 280px; }
+  body #wrapper #page #claudia img {
+    margin: 0 0 0 5px; }
+  body #wrapper #page #claudia p {
+    width: 411px; }
+  body #wrapper #page .text {
+    font-family: Mukta Vaani;
+    font-size: 24px;
+    text-align: center;
+    color: #4A4A4A;
+    margin: 24px auto 0; }
+
+body #wrapper #footer {
+  margin: 100px 450px 0 107px;
+  display: flex;
+  justify-content: space-between; }
+  body #wrapper #footer .content__gallery .gallery {
+    border: 3px solid #979797;
+    padding: 15px 47px;
+    margin: 0 30px 0 0;
+    cursor: pointer;
+    background: none; }
+    body #wrapper #footer .content__gallery .gallery p {
+      font-family: "Roboto";
+      font-size: 36px;
+      line-height: 66px;
+      letter-spacing: 8px;
+      color: #7A797A;
+      margin: 0; }
+  body #wrapper #footer .content__gallery a {
+    margin: 0 0 0 30px;
+    align-self: center; }

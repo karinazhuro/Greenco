@@ -1,6 +1,33 @@
 // colors
-$colorSlogan: #7A797A;
+$slogan: #7A797A;
 $colorContentSection: #4A4A4A;
 $colorContentText: #FFFFFF;
 $carouselIndicatorBackground: #FFFFFF;
 $carouselIndicatorBorder: #FFFFFF;
+$contentGalleryBorder: #979797;
+
+// .content__gallery
+// button
+@mixin gallery {
+  .gallery {
+    border: 3px solid $contentGalleryBorder;
+    padding: 15px 47px;
+    margin: 0 30px 0 0;
+    cursor: pointer;
+    background: none;
+
+    p {
+      font-family: "Roboto";
+      font-size: 36px;
+      line-height: 66px;
+      letter-spacing: 8px;
+      color: $slogan;
+      margin: 0;
+    }
+  }
+
+  a {
+    margin: 0 0 0 30px;
+    align-self: center;
+  }
+}

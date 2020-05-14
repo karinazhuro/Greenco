@@ -1,8 +1,10 @@
+@import "rules";
+
 // import font
 @import "../fonts/Akronim";
 @import "../fonts/WorkSans";
 @import "../fonts/MuktaVaani";
-@import "rules";
+@import "../fonts/Roboto";
 
 html::-webkit-scrollbar {
   display: none;
@@ -35,7 +37,7 @@ body {
           p {
             font-family: Akronim;
             font-size: 48px;
-            color: $colorSlogan;
+            color: $slogan;
             margin: 16px 0 0 0;
           }
         }
@@ -48,114 +50,13 @@ body {
     }
 
     #content {
-      background-color: $colorContentSection;
-      height: 793px;
-      padding: 140px 220px 0;
+      height: 1018px;
 
       #content__container {
-        display: flex;
-        justify-content: space-between;
 
-        #content__picture {
-          width: 42%;
-        }
-
-        #content__carousel {
-          position: relative;
-          height: 500px;
-          width: 600px;
-
-          .carousel__button--left {
-            position: absolute;
-            top: 50%;
-            background: transparent;
-            border: 0;
-            cursor: pointer;
-            padding: 0;
-            transform: rotate(180deg);
-            left: -40px;
-          }
-
-          .carousel__button--right {
-            position: absolute;
-            top: 50%;
-            background: transparent;
-            border: 0;
-            cursor: pointer;
-            padding: 0;
-            right: 0;
-          }
-
-
-          .is-hidden {
-            display: none;
-          }
-
-
-          #carousel__track-container {
-            height: 100%;
-            position: relative;
-            overflow: hidden;
-            left: 30px;
-
-            #carousel__track {
-              padding: 0;
-              margin: 0;
-              list-style: none;
-              position: relative;
-              height: 100%;
-              transition: transform 250ms cubic-bezier(0.47, 0, 0.75, 0.72);
-
-              .carousel__slide {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                width: 100%;
-
-                h1 {
-                  font-family: Work Sans;
-                  font-weight: normal;
-                  font-size: 81px;
-                  line-height: 100px;
-                  letter-spacing: 18px;
-                  color: $colorContentText;
-                  margin: 53px 0 31px 0;
-                }
-
-                p {
-                  font-family: Mukta Vaani;
-                  font-size: 24px;
-                  line-height: 35px;
-                  text-align: justify;
-                  color: $colorContentText;
-                  margin: 0 93px 0 0;
-                }
-              }
-            }
-          }
-
-          #carousel__nav {
-            display: flex;
-            justify-content: flex-start;
-            padding: 0 55px 0 30px;
-
-            .carousel__indicator {
-              cursor: pointer;
-              background: $carouselIndicatorBackground;
-              opacity: 0.6;
-              border: 0 solid $carouselIndicatorBorder;
-              width: 168px;
-              height: 3px;
-            }
-
-            .current-slide {
-              border: 3px solid $carouselIndicatorBorder;
-              opacity: 1;
-              top: -3px;
-              position: relative;
-            }
-          }
-        }
+        background-color: $colorContentSection;
+        height: 793px;
+        padding: 140px 220px 0;
 
         #content__media {
           position: absolute;
@@ -169,6 +70,176 @@ body {
             margin: 10px 0;
           }
         }
+
+        #content__page {
+          display: flex;
+          justify-content: space-between;
+
+
+          #page__picture {
+            width: 42%;
+          }
+
+          #page__carousel {
+            position: relative;
+            height: 500px;
+            width: 600px;
+
+            .carousel__button--left {
+              position: absolute;
+              top: 50%;
+              background: transparent;
+              border: 0;
+              cursor: pointer;
+              padding: 0;
+              transform: rotate(180deg);
+              left: -40px;
+            }
+
+            .carousel__button--right {
+              position: absolute;
+              top: 50%;
+              background: transparent;
+              border: 0;
+              cursor: pointer;
+              padding: 0;
+              right: 0;
+            }
+
+
+            .is-hidden {
+              display: none;
+            }
+
+
+            #carousel__track-container {
+              height: 100%;
+              position: relative;
+              overflow: hidden;
+              left: 30px;
+
+              #carousel__track {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                position: relative;
+                height: 100%;
+                transition: transform 250ms cubic-bezier(0.47, 0, 0.75, 0.72);
+
+                .carousel__slide {
+                  position: absolute;
+                  top: 0;
+                  bottom: 0;
+                  width: 100%;
+
+                  h1 {
+                    font-family: Work Sans;
+                    font-weight: normal;
+                    font-size: 81px;
+                    line-height: 100px;
+                    letter-spacing: 18px;
+                    color: $colorContentText;
+                    margin: 53px 0 31px 0;
+                  }
+
+                  p {
+                    font-family: Mukta Vaani;
+                    font-size: 24px;
+                    line-height: 35px;
+                    text-align: justify;
+                    color: $colorContentText;
+                    margin: 0 93px 0 0;
+                  }
+                }
+              }
+            }
+
+            #carousel__nav {
+              display: flex;
+              justify-content: flex-start;
+              padding: 0 55px 0 30px;
+
+              .carousel__indicator {
+                cursor: pointer;
+                background: $carouselIndicatorBackground;
+                opacity: 0.6;
+                border: 0 solid $carouselIndicatorBorder;
+                width: 168px;
+                height: 3px;
+              }
+
+              .current-slide {
+                border: 3px solid $carouselIndicatorBorder;
+                opacity: 1;
+                top: -3px;
+                position: relative;
+              }
+            }
+          }
+        }
+
+        .content__gallery {
+          display: flex;
+          justify-content: flex-end;
+          bottom: 128px;
+          position: relative;
+
+          @include gallery();
+        }
+      }
+    }
+
+    #page {
+      display: flex;
+      margin: 230px 450px 0;
+
+      #title {
+        width: 30px;
+        word-wrap: break-word;
+        font-family: 'Roboto';
+        font-size: 48px;
+        color: $slogan;
+        margin: 48px 12px 21px 0;
+      }
+
+      #tanalee {
+        img {
+          margin: 0 5px 0 12px;
+        }
+
+        p {
+          width: 280px;
+        }
+      }
+
+      #claudia {
+        img {
+          margin: 0 0 0 5px;
+        }
+
+        p {
+          width: 411px;
+        }
+      }
+
+      .text {
+        font-family: Mukta Vaani;
+        font-size: 24px;
+        text-align: center;
+        color: #4A4A4A;
+        margin: 24px auto 0;
+      }
+
+    }
+
+    #footer {
+      margin: 100px 450px 0 107px;
+      display: flex;
+      justify-content: space-between;
+
+      .content__gallery {
+
+        @include gallery();
       }
     }
   }
