@@ -6,6 +6,7 @@
 @import "../fonts/MuktaVaani";
 @import "../fonts/Roboto";
 
+
 html::-webkit-scrollbar {
   display: none;
 }
@@ -80,112 +81,116 @@ body {
             width: 42%;
           }
 
-          #page__carousel {
-            position: relative;
-            height: 500px;
-            width: 600px;
-
-            .carousel__button--left {
-              position: absolute;
-              top: 50%;
-              background: transparent;
-              border: 0;
-              cursor: pointer;
-              padding: 0;
-              transform: rotate(180deg);
-              left: -40px;
-            }
-
-            .carousel__button--right {
-              position: absolute;
-              top: 50%;
-              background: transparent;
-              border: 0;
-              cursor: pointer;
-              padding: 0;
-              right: 0;
-            }
-
-
-            .is-hidden {
-              display: none;
-            }
-
-
-            #carousel__track-container {
-              height: 100%;
+          #block {
+            #page__carousel {
               position: relative;
-              overflow: hidden;
-              left: 30px;
+              height: 500px;
+              width: 600px;
 
-              #carousel__track {
+              .carousel__button--left {
+                position: absolute;
+                top: 50%;
+                background: transparent;
+                border: 0;
+                cursor: pointer;
                 padding: 0;
-                margin: 0;
-                list-style: none;
-                position: relative;
+                transform: rotate(180deg);
+                left: -40px;
+              }
+
+              .carousel__button--right {
+                position: absolute;
+                top: 50%;
+                background: transparent;
+                border: 0;
+                cursor: pointer;
+                padding: 0;
+                right: 0;
+              }
+
+
+              .is-hidden {
+                display: none;
+              }
+
+
+              #carousel__track-container {
                 height: 100%;
-                transition: transform 250ms cubic-bezier(0.47, 0, 0.75, 0.72);
+                position: relative;
+                overflow: hidden;
+                left: 30px;
 
-                .carousel__slide {
-                  position: absolute;
-                  top: 0;
-                  bottom: 0;
-                  width: 100%;
+                #carousel__track {
+                  padding: 0;
+                  margin: 0;
+                  list-style: none;
+                  position: relative;
+                  height: 100%;
+                  transition: transform 250ms cubic-bezier(0.47, 0, 0.75, 0.72);
 
-                  h1 {
-                    font-family: Work Sans;
-                    font-weight: normal;
-                    font-size: 81px;
-                    line-height: 100px;
-                    letter-spacing: 18px;
-                    color: $colorContentText;
-                    margin: 53px 0 31px 0;
+                  .carousel__slide {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    width: 100%;
+
+                    h1 {
+                      font-family: Work Sans;
+                      font-weight: normal;
+                      font-size: 81px;
+                      line-height: 100px;
+                      letter-spacing: 18px;
+                      color: $colorContentText;
+                      margin: 53px 0 31px 0;
+                    }
+
+                    p {
+                      font-family: Mukta Vaani;
+                      font-size: 24px;
+                      line-height: 35px;
+                      text-align: justify;
+                      color: $colorContentText;
+                      margin: 0 93px 0 0;
+                    }
                   }
+                }
+              }
 
-                  p {
-                    font-family: Mukta Vaani;
-                    font-size: 24px;
-                    line-height: 35px;
-                    text-align: justify;
-                    color: $colorContentText;
-                    margin: 0 93px 0 0;
-                  }
+              #carousel__nav {
+                display: flex;
+                justify-content: flex-start;
+                padding: 0 55px 0 30px;
+
+                .carousel__indicator {
+                  cursor: pointer;
+                  background: $carouselIndicatorBackground;
+                  opacity: 0.6;
+                  border: 0 solid $carouselIndicatorBorder;
+                  width: 168px;
+                  height: 3px;
+                }
+
+                .current-slide {
+                  border: 3px solid $carouselIndicatorBorder;
+                  opacity: 1;
+                  top: -3px;
+                  position: relative;
                 }
               }
             }
 
-            #carousel__nav {
+            .content__gallery {
               display: flex;
-              justify-content: flex-start;
-              padding: 0 55px 0 30px;
+              justify-content: flex-end;
+              bottom: -232px;
+              position: relative;
 
-              .carousel__indicator {
-                cursor: pointer;
-                background: $carouselIndicatorBackground;
-                opacity: 0.6;
-                border: 0 solid $carouselIndicatorBorder;
-                width: 168px;
-                height: 3px;
-              }
-
-              .current-slide {
-                border: 3px solid $carouselIndicatorBorder;
-                opacity: 1;
-                top: -3px;
-                position: relative;
-              }
+              @include gallery();
             }
+
           }
         }
 
-        .content__gallery {
-          display: flex;
-          justify-content: flex-end;
-          bottom: 128px;
-          position: relative;
-
-          @include gallery();
-        }
       }
     }
 

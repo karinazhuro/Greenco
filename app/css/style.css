@@ -46,11 +46,11 @@ body #wrapper #content {
       justify-content: space-between; }
       body #wrapper #content #content__container #content__page #page__picture {
         width: 42%; }
-      body #wrapper #content #content__container #content__page #page__carousel {
+      body #wrapper #content #content__container #content__page #block #page__carousel {
         position: relative;
         height: 500px;
         width: 600px; }
-        body #wrapper #content #content__container #content__page #page__carousel .carousel__button--left {
+        body #wrapper #content #content__container #content__page #block #page__carousel .carousel__button--left {
           position: absolute;
           top: 50%;
           background: transparent;
@@ -59,7 +59,7 @@ body #wrapper #content {
           padding: 0;
           transform: rotate(180deg);
           left: -40px; }
-        body #wrapper #content #content__container #content__page #page__carousel .carousel__button--right {
+        body #wrapper #content #content__container #content__page #block #page__carousel .carousel__button--right {
           position: absolute;
           top: 50%;
           background: transparent;
@@ -67,26 +67,26 @@ body #wrapper #content {
           cursor: pointer;
           padding: 0;
           right: 0; }
-        body #wrapper #content #content__container #content__page #page__carousel .is-hidden {
+        body #wrapper #content #content__container #content__page #block #page__carousel .is-hidden {
           display: none; }
-        body #wrapper #content #content__container #content__page #page__carousel #carousel__track-container {
+        body #wrapper #content #content__container #content__page #block #page__carousel #carousel__track-container {
           height: 100%;
           position: relative;
           overflow: hidden;
           left: 30px; }
-          body #wrapper #content #content__container #content__page #page__carousel #carousel__track-container #carousel__track {
+          body #wrapper #content #content__container #content__page #block #page__carousel #carousel__track-container #carousel__track {
             padding: 0;
             margin: 0;
             list-style: none;
             position: relative;
             height: 100%;
             transition: transform 250ms cubic-bezier(0.47, 0, 0.75, 0.72); }
-            body #wrapper #content #content__container #content__page #page__carousel #carousel__track-container #carousel__track .carousel__slide {
+            body #wrapper #content #content__container #content__page #block #page__carousel #carousel__track-container #carousel__track .carousel__slide {
               position: absolute;
               top: 0;
               bottom: 0;
               width: 100%; }
-              body #wrapper #content #content__container #content__page #page__carousel #carousel__track-container #carousel__track .carousel__slide h1 {
+              body #wrapper #content #content__container #content__page #block #page__carousel #carousel__track-container #carousel__track .carousel__slide h1 {
                 font-family: Work Sans;
                 font-weight: normal;
                 font-size: 81px;
@@ -94,50 +94,50 @@ body #wrapper #content {
                 letter-spacing: 18px;
                 color: #FFFFFF;
                 margin: 53px 0 31px 0; }
-              body #wrapper #content #content__container #content__page #page__carousel #carousel__track-container #carousel__track .carousel__slide p {
+              body #wrapper #content #content__container #content__page #block #page__carousel #carousel__track-container #carousel__track .carousel__slide p {
                 font-family: Mukta Vaani;
                 font-size: 24px;
                 line-height: 35px;
                 text-align: justify;
                 color: #FFFFFF;
                 margin: 0 93px 0 0; }
-        body #wrapper #content #content__container #content__page #page__carousel #carousel__nav {
+        body #wrapper #content #content__container #content__page #block #page__carousel #carousel__nav {
           display: flex;
           justify-content: flex-start;
           padding: 0 55px 0 30px; }
-          body #wrapper #content #content__container #content__page #page__carousel #carousel__nav .carousel__indicator {
+          body #wrapper #content #content__container #content__page #block #page__carousel #carousel__nav .carousel__indicator {
             cursor: pointer;
             background: #FFFFFF;
             opacity: 0.6;
             border: 0 solid #FFFFFF;
             width: 168px;
             height: 3px; }
-          body #wrapper #content #content__container #content__page #page__carousel #carousel__nav .current-slide {
+          body #wrapper #content #content__container #content__page #block #page__carousel #carousel__nav .current-slide {
             border: 3px solid #FFFFFF;
             opacity: 1;
             top: -3px;
             position: relative; }
-    body #wrapper #content #content__container .content__gallery {
-      display: flex;
-      justify-content: flex-end;
-      bottom: 128px;
-      position: relative; }
-      body #wrapper #content #content__container .content__gallery .gallery {
-        border: 3px solid #979797;
-        padding: 15px 47px;
-        margin: 0 30px 0 0;
-        cursor: pointer;
-        background: none; }
-        body #wrapper #content #content__container .content__gallery .gallery p {
-          font-family: "Roboto";
-          font-size: 36px;
-          line-height: 66px;
-          letter-spacing: 8px;
-          color: #7A797A;
-          margin: 0; }
-      body #wrapper #content #content__container .content__gallery a {
-        margin: 0 0 0 30px;
-        align-self: center; }
+      body #wrapper #content #content__container #content__page #block .content__gallery {
+        display: flex;
+        justify-content: flex-end;
+        bottom: -232px;
+        position: relative; }
+        body #wrapper #content #content__container #content__page #block .content__gallery .gallery {
+          border: 3px solid #979797;
+          padding: 15px 47px;
+          margin: 0 30px 0 0;
+          cursor: pointer;
+          background: none; }
+          body #wrapper #content #content__container #content__page #block .content__gallery .gallery p {
+            font-family: "Roboto";
+            font-size: 36px;
+            line-height: 66px;
+            letter-spacing: 8px;
+            color: #7A797A;
+            margin: 0; }
+        body #wrapper #content #content__container #content__page #block .content__gallery a {
+          margin: 0 0 0 30px;
+          align-self: center; }
 
 body #wrapper #page {
   display: flex;
