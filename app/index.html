@@ -12,7 +12,7 @@
 	<div id="header">
 		<div id="header__menu">
 			<a href="#"><img src="img/wrapper/header/menu/menuIcon.svg" alt="menu"></a>
-			<a href="#"><img src="img/wrapper/header/menu/home.svg" alt="home"></a>
+			<a id="home" href="#"><img src="img/wrapper/header/menu/home.svg" alt="home"></a>
 		</div>
 		<div id="header__banner">
 			<img id="header__banner_logo" src="img/wrapper/header/banner/GReeenco..svg" alt="GReeenco">
@@ -23,9 +23,9 @@
 	<div id="content">
 		<div id="content__container">
 			<div id="content__media">
-				<a class="media" href="#"><img src="img/wrapper/content/media/instagram.svg" alt="instagram"></a>
-				<a class="media" href="#"><img src="img/wrapper/content/media/facebook.svg" alt="facebook"></a>
-				<a class="media" href="#"><img src="img/wrapper/content/media/tw.svg" alt="tw"></a>
+				<a class="media" href="#"><img src="img/wrapper/content/media/instagram.png" alt="instagram"></a>
+				<a class="media" href="#"><img src="img/wrapper/content/media/facebook.png" alt="facebook"></a>
+				<a class="media" href="#"><img src="img/wrapper/content/media/tw.png" alt="tw"></a>
 			</div>
 			<div id="content__page">
 				<img id="page__picture" src="img/wrapper/content/annie-spratt-78044.svg">
@@ -37,7 +37,7 @@
 						<div id="carousel__track-container">
 							<ul id="carousel__track">
 								<li class="carousel__slide current-slide">
-									<h1>Potted <br> cacti</h1>
+									<h1>Potted cacti</h1>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 										labore et
 										dolore
@@ -47,7 +47,7 @@
 										consequat. .</p>
 								</li>
 								<li class="carousel__slide">
-									<h1>Potted <br> cacti</h1>
+									<h1>Potted cacti</h1>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 										labore et
 										dolore
@@ -57,7 +57,7 @@
 										consequat. .</p>
 								</li>
 								<li class="carousel__slide">
-									<h1>Potted <br> cacti</h1>
+									<h1>Potted cacti</h1>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 										labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
 										nisi
@@ -78,11 +78,10 @@
 					<div class="content__gallery">
 						<button class="gallery" href="#"><p>VIEW GALLERY</p></button>
 						<a href="#">
-							<img src="img/wrapper/content/section/Arrow.svg" alt="arrow">
+							<img class="arrow" src="img/wrapper/content/section/Arrow.svg" alt="arrow">
 						</a>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</div>
@@ -102,16 +101,24 @@
 		</div>
 	</div>
 	<div id="footer">
-		<img src="img/wrapper/footer/plant-2.png" alt="plant">
+		<img id="plant" src="img/wrapper/footer/plant-2.png" alt="plant">
 		<div class="content__gallery">
 			<button class="gallery" href="#"><p>VIEW GALLERY</p></button>
 			<a href="#">
-				<img src="img/wrapper/content/section/Arrow.svg" alt="arrow">
+				<img class="arrow" src="img/wrapper/content/section/Arrow.svg" alt="arrow">
 			</a>
+		</div>
+		<div id="footer__media">
+			<a class="media" href="#"><img src="img/wrapper/content/media/instagramDark.png" alt="instagram"></a>
+			<a class="media" href="#"><img src="img/wrapper/content/media/facebookDark.png" alt="facebook"></a>
+			<a class="media" href="#"><img src="img/wrapper/content/media/twDark.png" alt="tw"></a>
 		</div>
 	</div>
 </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+				integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+				crossorigin="anonymous"></script>
 <script src="js/carousel.js"></script>
 </body>
 </html>

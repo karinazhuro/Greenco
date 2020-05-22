@@ -13,7 +13,7 @@ body #wrapper #header {
     display: flex;
     justify-content: space-between; }
   body #wrapper #header #header__banner {
-    padding-top: 305px;
+    padding: 305px 0 0 0;
     position: relative; }
     body #wrapper #header #header__banner #header__banner_logo {
       width: 100%; }
@@ -41,15 +41,20 @@ body #wrapper #content {
       bottom: -800px; }
       body #wrapper #content #content__container #content__media a {
         margin: 10px 0; }
+        body #wrapper #content #content__container #content__media a:hover {
+          box-shadow: -0px -0px 20px 0px #fff;
+          transition: all 500ms ease; }
     body #wrapper #content #content__container #content__page {
       display: flex;
       justify-content: space-between; }
       body #wrapper #content #content__container #content__page #page__picture {
-        width: 42%; }
+        width: 38%; }
       body #wrapper #content #content__container #content__page #block #page__carousel {
         position: relative;
         height: 500px;
-        width: 600px; }
+        width: 100%;
+        right: 50px;
+        margin: 0 0 65px; }
         body #wrapper #content #content__container #content__page #block #page__carousel .carousel__button--left {
           position: absolute;
           top: 50%;
@@ -58,7 +63,7 @@ body #wrapper #content {
           cursor: pointer;
           padding: 0;
           transform: rotate(180deg);
-          left: -40px; }
+          left: -70px; }
         body #wrapper #content #content__container #content__page #block #page__carousel .carousel__button--right {
           position: absolute;
           top: 50%;
@@ -66,7 +71,7 @@ body #wrapper #content {
           border: 0;
           cursor: pointer;
           padding: 0;
-          right: 0; }
+          right: -50px; }
         body #wrapper #content #content__container #content__page #block #page__carousel .is-hidden {
           display: none; }
         body #wrapper #content #content__container #content__page #block #page__carousel #carousel__track-container {
@@ -79,7 +84,6 @@ body #wrapper #content {
             margin: 0;
             list-style: none;
             position: relative;
-            height: 100%;
             transition: transform 250ms cubic-bezier(0.47, 0, 0.75, 0.72); }
             body #wrapper #content #content__container #content__page #block #page__carousel #carousel__track-container #carousel__track .carousel__slide {
               position: absolute;
@@ -93,7 +97,7 @@ body #wrapper #content {
                 line-height: 100px;
                 letter-spacing: 18px;
                 color: #FFFFFF;
-                margin: 53px 0 31px 0; }
+                margin: 53px 93px 31px 0; }
               body #wrapper #content #content__container #content__page #block #page__carousel #carousel__track-container #carousel__track .carousel__slide p {
                 font-family: Mukta Vaani;
                 font-size: 24px;
@@ -110,7 +114,7 @@ body #wrapper #content {
             background: #FFFFFF;
             opacity: 0.6;
             border: 0 solid #FFFFFF;
-            width: 168px;
+            width: 100%;
             height: 3px; }
           body #wrapper #content #content__container #content__page #block #page__carousel #carousel__nav .current-slide {
             border: 3px solid #FFFFFF;
@@ -141,14 +145,15 @@ body #wrapper #content {
 
 body #wrapper #page {
   display: flex;
-  margin: 230px 450px 0; }
+  justify-content: center;
+  margin: 230px auto; }
   body #wrapper #page #title {
     width: 30px;
     word-wrap: break-word;
     font-family: 'Roboto';
     font-size: 48px;
     color: #7A797A;
-    margin: 48px 12px 21px 0; }
+    margin: 48px 12px 48px 0; }
   body #wrapper #page #tanalee img {
     margin: 0 5px 0 12px; }
   body #wrapper #page #tanalee p {
@@ -157,12 +162,14 @@ body #wrapper #page {
     margin: 0 0 0 5px; }
   body #wrapper #page #claudia p {
     width: 411px; }
+  body #wrapper #page img {
+    height: auto; }
   body #wrapper #page .text {
     font-family: Mukta Vaani;
     font-size: 24px;
     text-align: center;
     color: #4A4A4A;
-    margin: 24px auto 0; }
+    margin: 24px auto 100px; }
 
 body #wrapper #footer {
   margin: 100px 450px 0 107px;
@@ -184,3 +191,5 @@ body #wrapper #footer {
   body #wrapper #footer .content__gallery a {
     margin: 0 0 0 30px;
     align-self: center; }
+  body #wrapper #footer #footer__media {
+    display: none; }

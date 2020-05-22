@@ -1,3 +1,344 @@
-@media all and (max-width: 1360px){
+@import "rules";
 
+@media all and (max-width: 1642px) {
+  body {
+    #wrapper {
+      #header {
+        padding: 72px 200px 0;
+      }
+
+      #content {
+        height: 793px;
+
+        #content__container {
+          padding: 100px 200px 0;
+
+          #content__page {
+            #page__picture {
+              width: 29%;
+            }
+
+            #block {
+              #page__carousel {
+
+                .carousel__button--left {
+                  top: 30%;
+                }
+
+                .carousel__button--right {
+                  top: 30%;
+                }
+              }
+
+              .content__gallery {
+                bottom: -78px;
+                justify-content: center;
+                //right: 20px;
+
+                .gallery {
+                  border: 3px solid $contentGalleryBorderDark;
+
+                  p {
+                    color: $sloganDark;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      #page {
+        margin: 140px 150px;
+        flex-wrap: wrap;
+      }
+
+      #footer {
+        margin: 100px 311px 0 107px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1462px) {
+  body {
+    #wrapper {
+      #header {
+        padding: 72px 150px 0;
+
+        #header__banner {
+          padding: 130px 0 0 0;
+
+          #header__banner_plant {
+            width: 20%;
+            margin: -265px 0 -4px 466px;
+          }
+        }
+      }
+
+      #content {
+        height: $heightContent1462;
+
+        #content__container {
+          padding: 100px 150px 0;
+          height: $heightContent1462;
+
+          #content__media {
+            bottom: -200px;
+          }
+
+          #content__page {
+            display: block;
+
+            #page__picture {
+              display: none;
+            }
+
+            #block {
+              margin: 0 0 0 120px;
+
+              #page__carousel {
+                margin: 0 auto;
+                //margin: 0 auto 0 120px;
+                .carousel__button--left {
+                  top: 42%;
+                }
+
+                .carousel__button--right {
+                  top: 42%;
+                }
+
+                #carousel__track-container {
+                  #carousel__track {
+                    .carousel__slide {
+                      h1 {
+                        margin: 0 93px 31px 0;
+
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      #page {
+        div {
+          padding: 0 0 100px 0;
+        }
+      }
+
+      #footer {
+        display: block;
+        margin: 0 100px 100px;
+
+        .content__gallery {
+          display: flex;
+          justify-content: center;
+        }
+
+        #plant {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 858px) {
+  body {
+    #wrapper {
+      #header {
+        padding: 72px 100px 0;
+
+        #header__banner {
+          padding: 73px 0 0 0;
+        }
+      }
+
+      #content {
+        height: $heightContent858;
+
+        #content__container {
+          padding: 100px 100px 0;
+          height: $heightContent858;
+
+          #content__media {
+            display: none;
+          }
+
+          #content__page {
+            #block {
+              #page__carousel {
+                #carousel__track-container {
+                  #carousel__track {
+                    .carousel__slide {
+                      h1 {
+                        margin: 0 93px 10px 0;
+                        font-size: 70px;
+                        line-height: 80px;
+                        letter-spacing: 14px;
+                      }
+
+                      p {
+                        font-size: 20px;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .content__gallery {
+                margin: 0 0 0 -120px;
+                @include gallery858();
+              }
+            }
+          }
+        }
+      }
+
+      #page {
+        margin: 100px;
+
+        #title {
+          word-wrap: normal;
+          width: auto;
+          margin: 48px 0;
+          letter-spacing: 5px;
+        }
+
+        #tanalee {
+          img {
+            margin: 0;
+            width: 100%;
+          }
+        }
+        #claudia {
+          img {
+            margin: 0;
+          }
+        }
+      }
+
+      #footer {
+        margin: 0 100px 0;
+
+        .content__gallery {
+          @include gallery858();
+        }
+
+        #footer__media {
+          margin: 100px auto;
+          display: flex;
+          justify-content: center;
+
+          a {
+            margin: 0 50px;
+
+            &:hover {
+              box-shadow: -0px -0px 20px 0px #4A4A4A;
+              transition: all 500ms ease;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@media all and (max-width: 695px) {
+  body {
+    #wrapper {
+      #header {
+        padding: 50px;
+
+        #header__menu {
+          #home {
+            display: none;
+          }
+        }
+
+        #header__banner {
+          #header__banner_plant {
+            display: none;
+          }
+        }
+      }
+
+      #content {
+        #content__container {
+          padding: 50px 50px 0;
+
+          #content__page {
+            #block {
+              margin: 0;
+
+              #page__carousel {
+                right: 30px;
+                height: 540px;
+
+                .carousel__button--left {
+                  display: none;
+                }
+
+                .carousel__button--right {
+                  display: none;
+                }
+
+                #carousel__track-container {
+                  #carousel__track {
+                    .carousel__slide {
+                      h1 {
+                        margin: 0 0 10px 0;
+                      }
+
+                      p {
+                        margin: 0;
+                      }
+                    }
+                  }
+                }
+
+                #carousel__nav {
+                  padding: 0;
+                  left: 30px;
+                  position: relative;
+                }
+              }
+
+              .content__gallery {
+                margin: 0;
+
+                .gallery {
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      #page {
+        margin: 50px;
+
+        #title {
+          margin: 20px 0 48px 0;
+          font-size: 31px;
+          letter-spacing: 3px;
+        }
+        #tanalee {
+          display: contents;
+        }
+        #claudia {
+          display: contents;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }

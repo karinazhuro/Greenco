@@ -27,7 +27,7 @@ body {
       }
 
       #header__banner {
-        padding-top: 305px;
+        padding: 305px 0 0 0;
         position: relative;
 
         #header__banner_logo {
@@ -54,7 +54,6 @@ body {
       height: 1018px;
 
       #content__container {
-
         background-color: $colorContentSection;
         height: 793px;
         padding: 140px 220px 0;
@@ -69,6 +68,11 @@ body {
 
           a {
             margin: 10px 0;
+            &:hover {
+              box-shadow: -0px -0px 20px 0px #fff;
+              transition: all 500ms ease;
+            }
+
           }
         }
 
@@ -76,16 +80,17 @@ body {
           display: flex;
           justify-content: space-between;
 
-
           #page__picture {
-            width: 42%;
+            width: 38%;
           }
 
           #block {
             #page__carousel {
               position: relative;
               height: 500px;
-              width: 600px;
+              width: 100%;
+              right: 50px;
+              margin: 0 0 65px;
 
               .carousel__button--left {
                 position: absolute;
@@ -95,7 +100,7 @@ body {
                 cursor: pointer;
                 padding: 0;
                 transform: rotate(180deg);
-                left: -40px;
+                left: -70px;
               }
 
               .carousel__button--right {
@@ -105,14 +110,12 @@ body {
                 border: 0;
                 cursor: pointer;
                 padding: 0;
-                right: 0;
+                right: -50px;
               }
-
 
               .is-hidden {
                 display: none;
               }
-
 
               #carousel__track-container {
                 height: 100%;
@@ -125,7 +128,7 @@ body {
                   margin: 0;
                   list-style: none;
                   position: relative;
-                  height: 100%;
+                  //height: 100%;
                   transition: transform 250ms cubic-bezier(0.47, 0, 0.75, 0.72);
 
                   .carousel__slide {
@@ -141,7 +144,7 @@ body {
                       line-height: 100px;
                       letter-spacing: 18px;
                       color: $colorContentText;
-                      margin: 53px 0 31px 0;
+                      margin: 53px 93px 31px 0;
                     }
 
                     p {
@@ -166,7 +169,7 @@ body {
                   background: $carouselIndicatorBackground;
                   opacity: 0.6;
                   border: 0 solid $carouselIndicatorBorder;
-                  width: 168px;
+                  width: 100%;
                   height: 3px;
                 }
 
@@ -184,19 +187,17 @@ body {
               justify-content: flex-end;
               bottom: -232px;
               position: relative;
-
               @include gallery();
             }
-
           }
         }
-
       }
     }
 
     #page {
       display: flex;
-      margin: 230px 450px 0;
+      justify-content: center;
+      margin: 230px auto;
 
       #title {
         width: 30px;
@@ -204,7 +205,7 @@ body {
         font-family: 'Roboto';
         font-size: 48px;
         color: $slogan;
-        margin: 48px 12px 21px 0;
+        margin: 48px 12px 48px 0;
       }
 
       #tanalee {
@@ -217,7 +218,7 @@ body {
         }
       }
 
-      #claudia {
+        #claudia {
         img {
           margin: 0 0 0 5px;
         }
@@ -227,12 +228,16 @@ body {
         }
       }
 
+      img {
+        height: auto;
+      }
+
       .text {
         font-family: Mukta Vaani;
         font-size: 24px;
         text-align: center;
         color: #4A4A4A;
-        margin: 24px auto 0;
+        margin: 24px auto 100px;
       }
 
     }
@@ -243,8 +248,10 @@ body {
       justify-content: space-between;
 
       .content__gallery {
-
         @include gallery();
+      }
+      #footer__media {
+        display: none;
       }
     }
   }

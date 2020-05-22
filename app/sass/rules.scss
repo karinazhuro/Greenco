@@ -5,9 +5,14 @@ $colorContentText: #FFFFFF;
 $carouselIndicatorBackground: #FFFFFF;
 $carouselIndicatorBorder: #FFFFFF;
 $contentGalleryBorder: #979797;
+$contentGalleryBorderDark: #E3E3E3;
+$sloganDark: #E3E3E3;
+
+// heightContent
+$heightContent1462: 981px;
+$heightContent858: 881px;
 
 // .content__gallery
-// button
 @mixin gallery {
   .gallery {
     border: 3px solid $contentGalleryBorder;
@@ -29,5 +34,19 @@ $contentGalleryBorder: #979797;
   a {
     margin: 0 0 0 30px;
     align-self: center;
+  }
+}
+
+@mixin gallery858 {
+  .gallery {
+    margin: 0;
+
+    p {
+      font-size: 27px;
+      line-height: 59px;
+    }
+  }
+  a {
+    display: none;
   }
 }
